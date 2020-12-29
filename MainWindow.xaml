@@ -1,0 +1,453 @@
+﻿<Window x:Class="CustomControls.Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomControls.Sample" xmlns:cc="clr-namespace:hu.czompisoftware.customcontrols.CuttingCorners;assembly=CustomControls"
+        mc:Ignorable="d"
+        Title="CustomControls.Sample « Czompi Software 2020" Height="450" Width="800">
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!--#region Button styles -->
+            <Grid Grid.Row="0" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="Button styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:Button Content="No style added" Margin="0,0,8,0"/>
+                        <cc:Button Style="{StaticResource ButtonDefault}" Content="ButtonDefault" Margin="0,0,8,0"/>
+                        <cc:Button Style="{StaticResource ButtonPrimary}" Content="ButtonPrimary" Margin="0,0,8,0"/>
+                        <cc:Button Style="{StaticResource ButtonSecondary}" Content="ButtonSecondary" Margin="0,0,8,0"/>
+                        <cc:Button Style="{StaticResource ButtonSuccess}" Content="ButtonSuccess" Margin="0,0,8,0"/>
+                        <cc:Button Style="{StaticResource ButtonDanger}" Content="ButtonDanger" Margin="0,0,8,0"/>
+                        <cc:Button Style="{StaticResource ButtonWarning}" Content="ButtonWarning" Margin="0,0,8,0"/>
+                        <cc:Button Style="{StaticResource ButtonInfo}" Content="ButtonInfo" Margin="0,0,8,0"/>
+                        <cc:Button Style="{StaticResource ButtonLight}" Content="ButtonLight" Margin="0,0,8,0"/>
+                        <cc:Button Style="{StaticResource ButtonDark}" Content="ButtonDark" Margin="0,0,8,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region Label styles -->
+            <Grid Grid.Row="1" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="Label styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:Label Content="No style added" Margin="0,0,8,0"/>
+                        <cc:Label Style="{StaticResource LabelDefault}" Content="LabelDefault" Margin="0,0,8,0"/>
+                        <cc:Label Style="{StaticResource LabelPrimary}" Content="LabelPrimary" Margin="0,0,8,0"/>
+                        <cc:Label Style="{StaticResource LabelSecondary}" Content="LabelSecondary" Margin="0,0,8,0"/>
+                        <cc:Label Style="{StaticResource LabelSuccess}" Content="LabelSuccess" Margin="0,0,8,0"/>
+                        <cc:Label Style="{StaticResource LabelDanger}" Content="LabelDanger" Margin="0,0,8,0"/>
+                        <cc:Label Style="{StaticResource LabelWarning}" Content="LabelWarning" Margin="0,0,8,0"/>
+                        <cc:Label Style="{StaticResource LabelInfo}" Content="LabelInfo" Margin="0,0,8,0"/>
+                        <cc:Label Style="{StaticResource LabelLight}" Content="LabelLight" Margin="0,0,8,0"/>
+                        <cc:Label Style="{StaticResource LabelDark}" Content="LabelDark" Margin="0,0,8,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region ListBox styles -->
+            <Grid Grid.Row="2" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="ListBox styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:ListBox Margin="0,0,8,0" SelectedItem="No style added">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>No style added</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                        <cc:ListBox Style="{StaticResource ListBoxDefault}" Margin="0,0,8,0">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>ListBoxDefault</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                        <cc:ListBox Style="{StaticResource ListBoxPrimary}" SelectedItem="ListBoxPrimary" Margin="0,0,8,0">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>ListBoxPrimary</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                        <cc:ListBox Style="{StaticResource ListBoxSecondary}" SelectedItem="ListBoxSecondary" Margin="0,0,8,0">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>ListBoxSecondary</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                        <cc:ListBox Style="{StaticResource ListBoxSuccess}" SelectedItem="ListBoxSuccess" Margin="0,0,8,0">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>ListBoxSuccess</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                        <cc:ListBox Style="{StaticResource ListBoxDanger}" SelectedItem="ListBoxDanger" Margin="0,0,8,0">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>ListBoxDanger</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                        <cc:ListBox Style="{StaticResource ListBoxWarning}" SelectedItem="ListBoxWarning" Margin="0,0,8,0">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>ListBoxWarning</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                        <cc:ListBox Style="{StaticResource ListBoxInfo}" SelectedItem="ListBoxInfo" Margin="0,0,8,0">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>ListBoxInfo</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                        <cc:ListBox Style="{StaticResource ListBoxLight}" SelectedItem="ListBoxLight" Margin="0,0,8,0">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>ListBoxLight</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                        <cc:ListBox Style="{StaticResource ListBoxDark}" SelectedItem="ListBoxDark" Margin="0,0,8,0">
+                            <cc:ListBox.Items>
+                                <ListBoxItem>ListBoxDark</ListBoxItem>
+                            </cc:ListBox.Items>
+                        </cc:ListBox>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region TextBox styles -->
+            <Grid Grid.Row="3" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="TextBox styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:TextBox Text="No style added" Margin="0,0,8,0"/>
+                        <cc:TextBox Style="{StaticResource TextBoxDefault}" Text="TextBoxDefault" Margin="0,0,8,0"/>
+                        <cc:TextBox Style="{StaticResource TextBoxPrimary}" Text="TextBoxPrimary" Margin="0,0,8,0"/>
+                        <cc:TextBox Style="{StaticResource TextBoxSecondary}" Text="TextBoxSecondary" Margin="0,0,8,0"/>
+                        <cc:TextBox Style="{StaticResource TextBoxSuccess}" Text="TextBoxSuccess" Margin="0,0,8,0"/>
+                        <cc:TextBox Style="{StaticResource TextBoxDanger}" Text="TextBoxDanger" Margin="0,0,8,0"/>
+                        <cc:TextBox Style="{StaticResource TextBoxWarning}" Text="TextBoxWarning" Margin="0,0,8,0"/>
+                        <cc:TextBox Style="{StaticResource TextBoxInfo}" Text="TextBoxInfo" Margin="0,0,8,0"/>
+                        <cc:TextBox Style="{StaticResource TextBoxLight}" Text="TextBoxLight" Margin="0,0,8,0"/>
+                        <cc:TextBox Style="{StaticResource TextBoxDark}" Text="TextBoxDark" Margin="0,0,8,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region CheckBox styles -->
+            <Grid Grid.Row="4" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="CheckBox styles (checked below):"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:CheckBox Content="No style added" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxDefault}" Content="CheckBoxDefault" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxPrimary}" Content="CheckBoxPrimary" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxSecondary}" Content="CheckBoxSecondary" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxSuccess}" Content="CheckBoxSuccess" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxDanger}" Content="CheckBoxDanger" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxWarning}" Content="CheckBoxWarning" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxInfo}" Content="CheckBoxInfo" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxLight}" Content="CheckBoxLight" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxDark}" Content="CheckBoxDark" Margin="0,0,8,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+                <ScrollViewer Grid.Row="2" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,8,0,8">
+                        <cc:CheckBox Content="No style added" IsChecked="True" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxDefault}" Content="CheckBoxDefault" IsChecked="True" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxPrimary}" Content="CheckBoxPrimary" IsChecked="True" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxSecondary}" Content="CheckBoxSecondary"  IsChecked="True" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxSuccess}" Content="CheckBoxSuccess" IsChecked="True" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxDanger}" Content="CheckBoxDanger" IsChecked="True" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxWarning}" Content="CheckBoxWarning" IsChecked="True" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxInfo}" Content="CheckBoxInfo" IsChecked="True" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxLight}" Content="CheckBoxLight" IsChecked="True" Margin="0,0,8,0"/>
+                        <cc:CheckBox Style="{StaticResource CheckBoxDark}" Content="CheckBoxDark" IsChecked="True" Margin="0,0,8,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region ComboBox styles -->
+            <Grid Grid.Row="5" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="ComboBox styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:ComboBox SelectedIndex="0" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                        <cc:ComboBox Style="{StaticResource ComboBoxDefault}" SelectedIndex="1" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxLight"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                        <cc:ComboBox Style="{StaticResource ComboBoxPrimary}" SelectedIndex="2" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxLight"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                        <cc:ComboBox Style="{StaticResource ComboBoxSecondary}" SelectedIndex="3" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxLight"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                        <cc:ComboBox Style="{StaticResource ComboBoxSuccess}" SelectedIndex="4" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxLight"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                        <cc:ComboBox Style="{StaticResource ComboBoxDanger}" SelectedIndex="5" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxLight"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                        <cc:ComboBox Style="{StaticResource ComboBoxWarning}" SelectedIndex="6" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxLight"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                        <cc:ComboBox Style="{StaticResource ComboBoxInfo}" SelectedIndex="7" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxLight"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                        <cc:ComboBox Style="{StaticResource ComboBoxLight}" SelectedIndex="8" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxLight"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                        <cc:ComboBox Style="{StaticResource ComboBoxDark}" SelectedIndex="9" Margin="0,0,8,0">
+                            <cc:ComboBox.Items>
+                                <ComboBoxItem Content="No style added"/>
+                                <ComboBoxItem Content="ComboBoxDefault"/>
+                                <ComboBoxItem Content="ComboBoxPrimary"/>
+                                <ComboBoxItem Content="ComboBoxSecondary"/>
+                                <ComboBoxItem Content="ComboBoxSuccess"/>
+                                <ComboBoxItem Content="ComboBoxDanger"/>
+                                <ComboBoxItem Content="ComboBoxWarning"/>
+                                <ComboBoxItem Content="ComboBoxInfo"/>
+                                <ComboBoxItem Content="ComboBoxLight"/>
+                                <ComboBoxItem Content="ComboBoxDark"/>
+                            </cc:ComboBox.Items>
+                        </cc:ComboBox>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region ScrollViewer styles -->
+            <Grid Grid.Row="6" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="ScrollViewer styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:ScrollViewer Content="No style added" Margin="0,0,8,0"/>
+                        <cc:ScrollViewer Style="{StaticResource ScrollViewerDefault}" Content="ScrollViewerDefault" Margin="0,0,8,0"/>
+                        <cc:ScrollViewer Style="{StaticResource ScrollViewerPrimary}" Content="ScrollViewerPrimary" Margin="0,0,8,0"/>
+                        <cc:ScrollViewer Style="{StaticResource ScrollViewerSecondary}" Content="ScrollViewerSecondary" Margin="0,0,8,0"/>
+                        <cc:ScrollViewer Style="{StaticResource ScrollViewerSuccess}" Content="ScrollViewerSuccess" Margin="0,0,8,0"/>
+                        <cc:ScrollViewer Style="{StaticResource ScrollViewerDanger}" Content="ScrollViewerDanger" Margin="0,0,8,0"/>
+                        <cc:ScrollViewer Style="{StaticResource ScrollViewerWarning}" Content="ScrollViewerWarning" Margin="0,0,8,0"/>
+                        <cc:ScrollViewer Style="{StaticResource ScrollViewerInfo}" Content="ScrollViewerInfo" Margin="0,0,8,0"/>
+                        <cc:ScrollViewer Style="{StaticResource ScrollViewerLight}" Content="ScrollViewerLight" Margin="0,0,8,0"/>
+                        <cc:ScrollViewer Style="{StaticResource ScrollViewerDark}" Content="ScrollViewerDark" Margin="0,0,8,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region TabItem styles -->
+            <Grid Grid.Row="7" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="TabControl styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <TabControl>
+                            <cc:TabItem Header="No style added" Margin="0,0,8,0"/>
+                            <cc:TabItem Style="{StaticResource TabItemDefault}" Header="TabItemDefault" Margin="0,0,8,0"/>
+                            <cc:TabItem Style="{StaticResource TabItemPrimary}" Header="TabItemPrimary" Margin="0,0,8,0"/>
+                            <cc:TabItem Style="{StaticResource TabItemSecondary}" Header="TabItemSecondary" Margin="0,0,8,0"/>
+                            <cc:TabItem Style="{StaticResource TabItemSuccess}" Header="TabItemSuccess" Margin="0,0,8,0"/>
+                            <cc:TabItem Style="{StaticResource TabItemDanger}" Header="TabItemDanger" Margin="0,0,8,0"/>
+                            <cc:TabItem Style="{StaticResource TabItemWarning}" Header="TabItemWarning" Margin="0,0,8,0"/>
+                            <cc:TabItem Style="{StaticResource TabItemInfo}" Header="TabItemInfo" Margin="0,0,8,0"/>
+                            <cc:TabItem Style="{StaticResource TabItemLight}" Header="TabItemLight" Margin="0,0,8,0"/>
+                            <cc:TabItem Style="{StaticResource TabItemDark}" Header="TabItemDark" Margin="0,0,8,0"/>
+                        </TabControl>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region Tabby styles -->
+            <Grid Grid.Row="8" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="Tabby styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:Tabby Header="No style added" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                        <cc:Tabby Style="{StaticResource TabbyDefault}" Header="TabbyDefault" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                        <cc:Tabby Style="{StaticResource TabbyPrimary}" Header="TabbyPrimary" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                        <cc:Tabby Style="{StaticResource TabbySecondary}" Header="TabbySecondary" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                        <cc:Tabby Style="{StaticResource TabbySuccess}" Header="TabbySuccess" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                        <cc:Tabby Style="{StaticResource TabbyDanger}" Header="TabbyDanger" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                        <cc:Tabby Style="{StaticResource TabbyWarning}" Header="TabbyWarning" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                        <cc:Tabby Style="{StaticResource TabbyInfo}" Header="TabbyInfo" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                        <cc:Tabby Style="{StaticResource TabbyLight}" Header="TabbyLight" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                        <cc:Tabby Style="{StaticResource TabbyDark}" Header="TabbyDark" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Margin="0,0,8,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region DragAndDrop styles -->
+            <Grid Grid.Row="9" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="DragAndDrop styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:DragAndDrop Content="No style added" Padding="48,32" Margin="0,0,8,0"/>
+                        <cc:DragAndDrop Style="{StaticResource DragAndDropDefault}" Content="DragAndDropDefault" Padding="48,32" Margin="0,0,8,0"/>
+                        <cc:DragAndDrop Style="{StaticResource DragAndDropPrimary}" Content="DragAndDropPrimary" Padding="48,32" Margin="0,0,8,0"/>
+                        <cc:DragAndDrop Style="{StaticResource DragAndDropSecondary}" Content="DragAndDropSecondary" Padding="48,32" Margin="0,0,8,0"/>
+                        <cc:DragAndDrop Style="{StaticResource DragAndDropSuccess}" Content="DragAndDropSuccess" Padding="48,32" Margin="0,0,8,0"/>
+                        <cc:DragAndDrop Style="{StaticResource DragAndDropDanger}" Content="DragAndDropDanger" Padding="48,32" Margin="0,0,8,0"/>
+                        <cc:DragAndDrop Style="{StaticResource DragAndDropWarning}" Content="DragAndDropWarning" Padding="48,32" Margin="0,0,8,0"/>
+                        <cc:DragAndDrop Style="{StaticResource DragAndDropInfo}" Content="DragAndDropInfo" Padding="48,32" Margin="0,0,8,0"/>
+                        <cc:DragAndDrop Style="{StaticResource DragAndDropLight}" Content="DragAndDropLight" Padding="48,32" Margin="0,0,8,0"/>
+                        <cc:DragAndDrop Style="{StaticResource DragAndDropDark}" Content="DragAndDropDark" Padding="48,32" Margin="0,0,8,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+
+        </Grid>
+    </ScrollViewer>
+</Window>
