@@ -20,6 +20,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <!--#region Button styles -->
@@ -158,8 +159,32 @@
             </Grid>
             <!--#endregion-->
 
-            <!--#region CheckBox styles -->
+            <!--#region PasswordBox styles -->
             <Grid Grid.Row="4" Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="PasswordBox styles:"/>
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <cc:PasswordBox Margin="0,0,8,0"/>
+                        <cc:PasswordBox Style="{StaticResource PasswordBoxDefault}" Margin="0,0,8,0"/>
+                        <cc:PasswordBox Style="{StaticResource PasswordBoxPrimary}" Margin="0,0,8,0"/>
+                        <cc:PasswordBox Style="{StaticResource PasswordBoxSecondary}" Margin="0,0,8,0"/>
+                        <cc:PasswordBox Style="{StaticResource PasswordBoxSuccess}" Margin="0,0,8,0"/>
+                        <cc:PasswordBox Style="{StaticResource PasswordBoxDanger}" Margin="0,0,8,0"/>
+                        <cc:PasswordBox Style="{StaticResource PasswordBoxWarning}" Margin="0,0,8,0"/>
+                        <cc:PasswordBox Style="{StaticResource PasswordBoxInfo}" Margin="0,0,8,0"/>
+                        <cc:PasswordBox Style="{StaticResource PasswordBoxLight}" Margin="0,0,8,0"/>
+                        <cc:PasswordBox Style="{StaticResource PasswordBoxDark}" Margin="0,0,8,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <!--#endregion-->
+            
+            <!--#region CheckBox styles -->
+            <Grid Grid.Row="5" Margin="8">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
@@ -198,7 +223,7 @@
             <!--#endregion-->
 
             <!--#region ComboBox styles -->
-            <Grid Grid.Row="5" Margin="8">
+            <Grid Grid.Row="6" Margin="8">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
@@ -351,7 +376,7 @@
             <!--#endregion-->
 
             <!--#region ScrollViewer styles -->
-            <Grid Grid.Row="6" Margin="8">
+            <Grid Grid.Row="7" Margin="8">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
@@ -375,7 +400,7 @@
             <!--#endregion-->
 
             <!--#region TabItem styles -->
-            <Grid Grid.Row="7" Margin="8">
+            <Grid Grid.Row="8" Margin="8">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
@@ -401,7 +426,7 @@
             <!--#endregion-->
 
             <!--#region Tabby styles -->
-            <Grid Grid.Row="8" Margin="8">
+            <Grid Grid.Row="9" Margin="8">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
@@ -425,7 +450,7 @@
             <!--#endregion-->
 
             <!--#region DragAndDrop styles -->
-            <Grid Grid.Row="9" Margin="8">
+            <Grid Grid.Row="10" Margin="8">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
